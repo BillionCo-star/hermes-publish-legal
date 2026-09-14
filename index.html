@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Hermes Publish — TikTok Automation for Creators</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>body{font-family:Inter,sans-serif}</style>
+</head>
+<body class="bg-white text-zinc-900">
+<header class="border-b">
+  <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-2 font-bold text-lg"><span class="w-8 h-8 bg-black text-white grid place-items-center rounded">H</span> Hermes Publish</div>
+    <nav class="flex gap-6 text-sm"><a href="privacy.html" class="hover:underline">Privacy Policy</a><a href="terms.html" class="hover:underline">Terms of Service</a><a href="mailto:support@hermes-publish.app" class="hover:underline">Contact</a></nav>
+  </div>
+</header>
+<main class="max-w-5xl mx-auto px-6 py-14">
+  <div class="inline-flex items-center gap-2 text-xs font-semibold bg-zinc-100 px-3 py-1 rounded-full">TikTok Login Kit & Content Posting API Integration</div>
+  <h1 class="text-4xl font-bold mt-4 leading-tight">Automate your TikTok content<br/>without touching your phone.</h1>
+  <p class="text-zinc-600 mt-4 max-w-2xl">Hermes Publish connects your TikTok account via the official TikTok API to upload scheduled videos you own. We only request <code class="bg-zinc-100 px-1 rounded">user.info.basic</code> and <code class="bg-zinc-100 px-1 rounded">video.upload</code> — nothing else. No inbox, no comments, no deletion.</p>
+  <div class="flex gap-3 mt-6">
+    <a href="privacy.html" class="bg-black text-white px-6 py-3 rounded-lg text-sm font-semibold">Privacy Policy</a>
+    <a href="terms.html" class="border px-6 py-3 rounded-lg text-sm font-semibold">Terms of Service</a>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6 mt-12">
+    <div class="border rounded-xl p-5"><h3 class="font-semibold">What we do</h3><p class="text-sm text-zinc-600 mt-2">Schedule and publish videos you created to your own TikTok account via <code>open.tiktokapis.com/v2/video/publish</code>. You authorize once via TikTok OAuth; we store an encrypted access_token.</p></div>
+    <div class="border rounded-xl p-5"><h3 class="font-semibold">What we don't do</h3><p class="text-sm text-zinc-600 mt-2">We do not read DMs, followers list beyond basic profile, or post to other accounts. No auto-commenting, scraping, or follower manipulation.</p></div>
+    <div class="border rounded-xl p-5"><h3 class="font-semibold">Data & deletion</h3><p class="text-sm text-zinc-600 mt-2">Tokens expire and auto-refresh. Revoke anytime in TikTok Settings → Apps. Request data deletion via support@hermes-publish.app (processed within 7 days).</p></div>
+  </div>
+  <div class="border rounded-xl p-6 mt-10 bg-zinc-50">
+    <h3 class="font-semibold">App information for TikTok review</h3>
+    <dl class="text-sm mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div><dt class="text-zinc-500">App name</dt><dd class="font-mono">Hermes Publish</dd></div>
+      <div><dt class="text-zinc-500">Platform</dt><dd>Web</dd></div>
+      <div><dt class="text-zinc-500">Scopes</dt><dd class="font-mono">user.info.basic, video.upload, video.publish</dd></div>
+      <div><dt class="text-zinc-500">Redirect URIs</dt><dd class="font-mono text-xs">https://YOUR-DOMAIN/callback<br/>http://localhost:3000/callback (dev)</dd></div>
+      <div><dt class="text-zinc-500">Contact</dt><dd>support@hermes-publish.app</dd></div>
+      <div><dt class="text-zinc-500">Effective date</dt><dd>September 14, 2026</dd></div>
+    </dl>
+  </div>
+  <p class="text-xs text-zinc-500 mt-8">© 2026 Hermes Publish / Billion&Co. This site exists to satisfy TikTok Developer portal legal URL requirements and accurately describes the app's behavior.</p>
+</main>
+<footer class="border-t py-6 text-center text-xs text-zinc-500">Hermes Publish · <a href="privacy.html" class="underline">Privacy</a> · <a href="terms.html" class="underline">Terms</a> · support@hermes-publish.app</footer>
+</body>
+</html>

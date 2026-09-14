@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Privacy Policy — Hermes Publish</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>body{font-family:Inter,sans-serif}</style>
+</head>
+<body class="bg-white text-zinc-900">
+<header class="border-b">
+  <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="font-bold">← Hermes Publish</a>
+    <nav class="text-sm"><a href="terms.html" class="hover:underline">Terms</a></nav>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-6 py-10 prose prose-zinc">
+  <h1>Privacy Policy</h1>
+  <p class="text-sm text-zinc-500">Effective date: September 14, 2026 · Last updated: September 14, 2026<br/>Controller: Hermes Publish (Billion&Co) · Contact: support@hermes-publish.app</p>
+
+  <h2>1. Overview</h2>
+  <p>Hermes Publish ("we", "us") is a web app that lets you publish videos <em>you own</em> to <em>your own</em> TikTok account via TikTok's official API (<code>open.tiktokapis.com</code>). This policy explains what we collect, why, and how you can delete it. We comply with TikTok's Developer Policies and applicable data-protection laws.</p>
+
+  <h2>2. Data we collect</h2>
+  <ul>
+    <li><strong>TikTok OAuth data</strong> (only after you authorize): <code>open_id</code>, display name, avatar URL (scope <code>user.info.basic</code>), and the OAuth <code>access_token</code>/<code>refresh_token</code> + expiry. We do not request email, phone, DMs, or follower lists.</li>
+    <li><strong>Content you choose to upload</strong>: video file, caption, cover image, privacy setting (public/friends/private) — sent to <code>/v2/video/publish</code> on your behalf.</li>
+    <li><strong>Technical logs</strong>: publish status (publish_id, upload result), timestamps, IP-derived country for rate-limiting. No advertising ID.</li>
+  </ul>
+
+  <h2>3. How we use it</h2>
+  <ul>
+    <li>Authenticate you and keep the session alive (refresh_token rotation).</li>
+    <li>Upload/publish videos per your explicit action. No auto-posting without your click/spreadsheet/queue trigger.</li>
+    <li>Show publish history and troubleshoot failures.</li>
+  </ul>
+  <p>Legal bases: consent (OAuth) and legitimate interest (security, abuse prevention). We do not sell data and do not use it for advertising.</p>
+
+  <h2>4. Storage &amp; security</h2>
+  <ul>
+    <li>Tokens encrypted at rest (AES-256-GCM) on our server in Singapore (or your self-hosted M75). Access restricted to the app process.</li>
+    <li>Video files are streamed to TikTok and not retained after successful publish unless you enable "keep copy" (then auto-deleted after 30 days).</li>
+    <li>HTTPS everywhere; HSTS; token rotation on each refresh.</li>
+  </ul>
+
+  <h2>5. Sharing &amp; disclosure</h2>
+  <p>We share data only with TikTok APIs to perform the publish you requested. We do not share with third parties, analytics SDKs, or advertisers. We disclose only if required by law.</p>
+
+  <h2>6. Retention</h2>
+  <ul>
+    <li>Tokens: until you revoke access (TikTok Settings → Apps → Hermes Publish → Revoke) or request deletion.</li>
+    <li>Publish logs: 90 days, then anonymized.</li>
+    <li>Backups: encrypted, 30-day retention.</li>
+  </ul>
+
+  <h2>7. Your rights</h2>
+  <p>You may at any time: revoke TikTok access, request export of your data, or request deletion at <a href="mailto:support@hermes-publish.app">support@hermes-publish.app</a>. Deletion is completed within 7 days and confirmed by email. For self-hosted installs, delete <code>~/.hermes/secrets/tiktok.env</code> locally.</p>
+
+  <h2>8. Children's privacy</h2>
+  <p>Our service is not directed to children under 13 and not to TikTok users under TikTok's minimum age. We do not knowingly collect children's data.</p>
+
+  <h2>9. International transfers</h2>
+  <p>If you are in the EEA/UK/Indonesia, data may be processed in Singapore on TikTok's infrastructure. We rely on Standard Contractual Clauses where required.</p>
+
+  <h2>10. Cookies</h2>
+  <p>This legal site uses no tracking cookies. The web app uses a single httpOnly session cookie for CSRF/OAuth state. No third-party pixels.</p>
+
+  <h2>11. Changes</h2>
+  <p>We will post material changes here and update the effective date. Continued use after notice constitutes acceptance.</p>
+
+  <h2>12. Contact &amp; complaints</h2>
+  <p>Email: support@hermes-publish.app<br/>Address: Billion&Co, Jakarta, Indonesia<br/>If you believe we mishandled data, you may lodge a complaint with your local data-protection authority.</p>
+
+  <hr/>
+  <p class="text-xs text-zinc-500">TikTok® is a trademark of ByteDance Ltd. This app is not affiliated with or endorsed by TikTok.</p>
+</main>
+<footer class="border-t py-6 text-center text-xs text-zinc-500">© 2026 Hermes Publish · <a href="index.html" class="underline">Home</a> · <a href="terms.html" class="underline">Terms</a></footer>
+</body>
+</html>
